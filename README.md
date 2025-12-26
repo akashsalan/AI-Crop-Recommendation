@@ -123,4 +123,20 @@ Google Vision API
 
 TensorFlow Agriculture Models
 
-
+## 📂 Folder Structure
+AI-Crop-Recommendation/
+│
+├── frontend/
+│ ├── index.html
+│ ├── styles.css
+│ ├── recommend/
+│ ├── fertilizer/
+│ ├── weather/
+│ ├── chat/
+│ └── about/
+│
+└── backend/
+├── app.py
+├── crops.csv
+├── fertilizers.csv
+├── requirements.txt
