@@ -1,0 +1,274 @@
+/* ----------------------------
+   Reset & Base
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f9f4, #e6f9ef);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------------------------
+   Navbar
+----------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2ecc71;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 0.6s ease;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ----------------------------
+   Chat Container
+----------------------------- */
+.chat-container {
+  flex: 1;
+  max-width: 800px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Chat Header */
+.chat-header {
+  background: #27ae60;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.chat-header h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.chat-header p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ----------------------------
+   Chat Window
+----------------------------- */
+.chat-window {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: #f9f9f9;
+}
+
+/* Scrollbar styling */
+.chat-window::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-window::-webkit-scrollbar-thumb {
+  background: #2ecc71;
+  border-radius: 4px;
+}
+
+/* ----------------------------
+   Messages
+----------------------------- */
+.message {
+  display: flex;
+  max-width: 75%;
+  animation: fadeUp 0.4s ease;
+}
+
+.message.user {
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.message.bot {
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.bubble {
+  padding: 0.8rem 1rem;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  position: relative;
+  word-wrap: break-word;
+}
+
+/* User bubble */
+.message.user .bubble {
+  background: #2ecc71;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+/* Bot bubble */
+.message.bot .bubble {
+  background: #eaeaea;
+  color: #333;
+  border-bottom-left-radius: 4px;
+}
+
+/* ----------------------------
+   Chat Input
+----------------------------- */
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-input input:focus {
+  border: 1px solid #2ecc71;
+  box-shadow: 0 0 6px rgba(46, 204, 113, 0.3);
+}
+
+.btn {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* Mic button */
+.btn-mic {
+  background: #f39c12;
+}
+
+.btn-mic:hover {
+  background: #e67e22;
+}
+
+/* ----------------------------
+   Footer
+----------------------------- */
+footer {
+  background: #2ecc71;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+/* ----------------------------
+   Animations
+----------------------------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+
+/* ----------------------------
+   Responsive Design
+----------------------------- */
+@media (max-width: 768px) {
+  .chat-container {
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .chat-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .chat-header p {
+    font-size: 0.8rem;
+  }
+
+  .chat-input input {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bubble {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .chat-header h2 {
+    font-size: 1rem;
+  }
+}

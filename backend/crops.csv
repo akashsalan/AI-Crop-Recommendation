@@ -1,0 +1,16 @@
+crop,family,soil_type_ok,ph_min,ph_max,rain_min_mm,rain_max_mm,sowing_months,n_need,p_need,k_need,typical_yield_kg_per_acre,input_cost_inr,base_price_inr_per_kg
+paddy,Poaceae,loam|clay_loam,5.5,7.0,120,300,Jun|Jul|Aug,high,med,med,1500,14000,23.9
+maize,Poaceae,sandy_loam|loam,5.8,7.0,50,150,Jun|Jul,med,med,med,1200,9000,22.0
+wheat,Poaceae,loam|clay_loam,6.0,7.5,50,120,Nov|Dec,med,med,med,1400,11000,24.0
+gram,Fabaceae,loam|sandy_loam,6.0,7.5,20,70,Oct|Nov,low,low,low,450,6000,60.0
+lentil,Fabaceae,loam|sandy_loam,6.0,7.5,20,70,Nov|Dec,low,low,low,440,5800,65.0
+pigeon_pea,Fabaceae,loam|sandy_loam,6.0,7.5,40,120,Jun|Jul,low,low,low,500,7000,80.0
+mustard,Brassicaceae,loam|sandy_loam,6.0,7.5,20,60,Oct|Nov,low,med,med,500,5000,60.0
+soybean,Fabaceae,loam|sandy_loam,6.0,7.0,60,200,Jun|Jul,low,med,med,730,8000,53.0
+groundnut,Fabaceae,sandy_loam|loam,6.0,7.0,50,125,Jun|Jul,low,med,med,810,9000,55.0
+sorghum,Poaceae,sandy_loam|loam,5.5,7.5,40,120,Jun|Jul,med,low,med,800,8500,29.0
+pearl_millet,Poaceae,sandy_loam|loam,5.5,7.5,30,100,Jun|Jul,med,low,med,600,8000,27.0
+potato,Solanaceae,loam|sandy_loam,5.5,6.5,50,150,Oct|Nov,med,med,med,8095,30000,12.0
+sugarcane,Poaceae,loam|clay_loam,6.0,7.5,700,1200,Feb|Mar,high,med,high,28000,50000,3.5
+sunflower,Asteraceae,loam|sandy_loam,6.0,7.5,40,120,Oct|Nov,med,med,high,700,7000,40.0
+blackgram,Fabaceae,loam|sandy_loam,6.0,7.5,30,100,Jul|Aug,low,low,low,400,5500,75.0

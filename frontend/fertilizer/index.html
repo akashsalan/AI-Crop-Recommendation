@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fertilizer Guide | Krishi Saathi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌱 Krishi Saathi</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recommend/index.html">Crop Recommendation</a></li>
+        <li><a href="../fertilizer/index.html"class="active">Fertilizer Guide</a></li>
+        <li><a href="../weather/index.html">Weather & Market</a></li>
+        <li><a href="../chat/index.html">Chat Assistant</a></li>
+        <li><a href="../about/index.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Main Container -->
+  <main class="fertilizer-container">
+    <h1 class="page-title">Fertilizer Usage Guide</h1>
+    <p class="page-subtitle">
+      Select your crop and fertilizer to get detailed instructions on dosage, timing, water needs, and method of application.
+    </p>
+
+    <!-- ✅ Form Card -->
+    <div class="form-card">
+      <form id="fertilizerForm" class="fertilizer-form">
+        
+        <!-- Crop Selection -->
+        <div class="form-group">
+          <label for="crop">Choose Crop</label>
+          <select id="crop" required>
+            <option value="" disabled selected>-- Select Crop --</option>
+            <option value="paddy">Paddy</option>
+            <option value="maize">Maize</option>
+            <option value="wheat">Wheat</option>
+            <option value="gram">Gram (Chickpea)</option>
+            <option value="lentil">Lentil</option>
+            <option value="pigeon_pea">Pigeon Pea (Arhar)</option>
+            <option value="mustard">Mustard</option>
+            <option value="soybean">Soybean</option>
+            <option value="groundnut">Groundnut</option>
+            <option value="sorghum">Sorghum (Jowar)</option>
+            <option value="pearl_millet">Pearl Millet (Bajra)</option>
+            <option value="potato">Potato</option>
+            <option value="sugarcane">Sugarcane</option>
+            <option value="sunflower">Sunflower</option>
+            <option value="blackgram">Blackgram (Urad)</option>
+          </select>
+        </div>
+
+        <!-- Fertilizer Selection -->
+        <div class="form-group">
+          <label for="fertilizer">Choose Fertilizer</label>
+          <select id="fertilizer" required disabled>
+            <option value="">-- Select Fertilizer --</option>
+          </select>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-group">
+          <button type="submit" class="btn">Show Guide</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ✅ Results Section -->
+    <section id="fertilizerResult" class="results-section">
+      <!-- JS will inject guide here -->
+    </section>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 Krishi Saathi | Smart India Hackathon Prototype</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

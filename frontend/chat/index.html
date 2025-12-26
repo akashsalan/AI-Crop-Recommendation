@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Assistant | Krishi Saathi</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌱 Krishi Saathi</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recommend/index.html">Crop Recommendation</a></li>
+        <li><a href="../fertilizer/index.html">Fertilizer Guide</a></li>
+        <li><a href="../weather/index.html">Weather & Market</a></li>
+        <li><a href="../chat/index.html"class="active">Chat Assistant</a></li>
+        <li><a href="../about/index.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Chat Container -->
+  <main class="chat-container">
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <h2>💬 Krishi Saathi Assistant</h2>
+      <p>Ask questions about crops, fertilizers, and farming tips.</p>
+    </div>
+
+    <!-- Chat Messages -->
+    <div id="chatWindow" class="chat-window">
+      <!-- Example initial messages -->
+      <div class="message bot">
+        <div class="bubble">👋 Namaste! I am your farming assistant. How can I help you today?</div>
+      </div>
+    </div>
+
+    <!-- Chat Input -->
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off"/>
+      <button id="sendBtn" class="btn">Send</button>
+      <button id="voiceBtn" class="btn btn-mic">🎤</button>
+    </div>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 Krishi Saathi | Smart India Hackathon Prototype</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

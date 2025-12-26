@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crop Recommendation | Krishi Saathi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌱 Krishi Saathi</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recommend/index.html"class="active">Crop Recommendation</a></li>
+        <li><a href="../fertilizer/index.html">Fertilizer Guide</a></li>
+        <li><a href="../weather/index.html">Weather & Market</a></li>
+        <li><a href="../chat/index.html">Chat Assistant</a></li>
+        <li><a href="../about/index.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Main container -->
+  <main class="recommend-container">
+    <h1 class="page-title">Crop & Fertilizer Recommendation</h1>
+    <p class="page-subtitle">
+      Fill in your farm details below to get AI-powered crop recommendations and fertilizer usage tips.
+    </p>
+
+   <!-- ✅ Form Card -->
+<div class="form-card">
+  <form id="recommendForm" class="recommend-form">
+
+    <!-- State -->
+    <div class="form-group">
+      <label for="state">Select State</label>
+      <select name="state" id="state" required>
+        <option value="" disabled selected>-- Choose State --</option>
+      </select>
+    </div>
+
+    <!-- City -->
+    <div class="form-group">
+      <label for="city">Select City</label>
+      <select name="city" id="city" required>
+        <option value="" disabled selected>-- Choose City --</option>
+      </select>
+    </div>
+
+    <!-- Acreage -->
+    <div class="form-group">
+      <label for="acreage">Acreage (in acres)</label>
+      <input type="number" name="acreage" id="acreage" min="0.1" step="0.1" value="1" required />
+    </div>
+
+    <!-- Month -->
+    <div class="form-group">
+      <label for="month">Sowing Month</label>
+      <select name="month" id="month" required>
+        <option value="" disabled selected>-- Choose Month --</option>
+        <option>January</option><option>February</option><option>March</option>
+        <option>April</option><option>May</option><option>June</option>
+        <option>July</option><option>August</option><option>September</option>
+        <option>October</option><option>November</option><option>December</option>
+      </select>
+    </div>
+
+    <!-- Soil Type -->
+    <div class="form-group">
+      <label for="soil_type">Soil Type</label>
+      <select name="soil_type" id="soil_type" required>
+        <option value="" disabled selected>-- Select Soil Type --</option>
+        <option>loam</option>
+        <option>clay_loam</option>
+        <option>sandy_loam</option>
+      </select>
+    </div>
+
+    <!-- Soil pH -->
+    <div class="form-group">
+      <label for="ph">Soil pH</label>
+      <input type="number" name="ph" id="ph" step="0.1" min="4" max="9" placeholder="e.g. 6.5" required />
+    </div>
+
+    <!-- NPK Levels -->
+    <div class="form-row">
+      <div class="form-group">
+        <label for="n_level">Nitrogen (N) Level</label>
+        <select name="n_level" id="n_level" required>
+          <option value="" disabled selected>-- Select --</option>
+          <option>low</option><option>med</option><option>high</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="p_level">Phosphorus (P) Level</label>
+        <select name="p_level" id="p_level" required>
+          <option value="" disabled selected>-- Select --</option>
+          <option>low</option><option>med</option><option>high</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="k_level">Potassium (K) Level</label>
+        <select name="k_level" id="k_level" required>
+          <option value="" disabled selected>-- Select --</option>
+          <option>low</option><option>med</option><option>high</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Rainfall -->
+    <div class="form-group">
+      <label for="rain_next30">Expected Rainfall Next 30 Days (mm)</label>
+      <input type="number" name="rain_next30" id="rain_next30" placeholder="e.g. 120" required />
+    </div>
+
+    <!-- Last Crop -->
+    <div class="form-group">
+      <label for="last_crop">Last Crop</label>
+      <select name="last_crop" id="last_crop">
+        <option value="" selected>-- None / Not Sure --</option>
+        <option>paddy</option>
+        <option>maize</option>
+        <option>wheat</option>
+        <option>gram</option>
+        <option>lentil</option>
+        <option>pigeon_pea</option>
+        <option>mustard</option>
+        <option>soybean</option>
+        <option>groundnut</option>
+        <option>sorghum</option>
+        <option>pearl_millet</option>
+        <option>potato</option>
+        <option>sugarcane</option>
+        <option>sunflower</option>
+        <option>blackgram</option>
+      </select>
+    </div>
+
+    <!-- Submit -->
+    <div class="form-group">
+      <button type="submit" class="btn">Get Recommendation</button>
+    </div>
+  </form>
+</div>
+
+
+    <!-- ✅ Results Section -->
+    <section id="results" class="results-section">
+      <!-- JS will inject crop cards + fertilizer plan here -->
+    </section>
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 Krishi Saathi | Smart India Hackathon Prototype</p>
+  </footer>
+
+  <script src="indian.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

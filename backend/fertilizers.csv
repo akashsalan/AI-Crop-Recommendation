@@ -1,0 +1,60 @@
+crop,fertilizer,formulation,stage,dosage_per_acre,application_method,notes
+paddy,Farmyard Manure (FYM),Organic,basal,2–3 tons/acre,Incorporate before puddling,Improves soil structure and micronutrients.
+paddy,SSP,0-16-0,basal,60 kg/acre,Band placement,Apply during land preparation to improve early P availability.
+paddy,Urea,46-0-0,top_dressing_1,40 kg/acre,Broadcasting,Apply 20–25 days after transplanting; split doses reduce losses.
+paddy,Urea,46-0-0,top_dressing_2,40 kg/acre,Broadcasting,Apply 40–45 days after transplanting; avoid standing water for a few hours.
+paddy,MOP,0-0-60,top_dressing_2,15 kg/acre,Broadcasting,Supports tillering and grain filling.
+maize,FYM/Compost,Organic,basal,1–2 tons/acre,Incorporate before sowing,Enhances moisture retention in sandy loam.
+maize,DAP,18-46-0,basal,50 kg/acre,Band placement,Place 5 cm beside and below seed for better root uptake.
+maize,Urea,46-0-0,top_dressing_1,30 kg/acre,Band placement,Apply at 20–25 DAS near root zone; avoid leaf contact.
+maize,MOP,0-0-60,top_dressing_2,20 kg/acre,Broadcasting,Apply before tasseling for better grain fill.
+wheat,FYM/Compost,Organic,basal,1 ton/acre,Incorporate before sowing,Improves tilth in loam/clay loam soils.
+wheat,DAP,18-46-0,basal,50 kg/acre,Band placement,Place below seed line to minimize P fixation.
+wheat,Urea,46-0-0,top_dressing_1,30 kg/acre,Broadcasting,Apply at first irrigation (CRI stage ~20–25 DAS).
+wheat,MOP,0-0-60,top_dressing_1,10–15 kg/acre,Broadcasting,Supports tillering and lodging resistance.
+gram,FYM/Compost,Organic,basal,0.5–1 ton/acre,Incorporate before sowing,Avoid excessive N; pulses fix N.
+gram,SSP,0-16-0,basal,40 kg/acre,Band placement,P is important for root nodulation and early growth.
+gram,MOP,0-0-60,basal,10 kg/acre,Band placement,Apply in K-deficient soils.
+gram,Rhizobium inoculant,Biofertilizer,seed_treatment,As per label,Seed coating,Enhances biological N fixation; follow label directions.
+lentil,FYM/Compost,Organic,basal,0.5–1 ton/acre,Incorporate before sowing,Improves soil health.
+lentil,SSP,0-16-0,basal,35–40 kg/acre,Band placement,Supports early growth and nodulation.
+lentil,Rhizobium inoculant,Biofertilizer,seed_treatment,As per label,Seed coating,Essential for N fixation in pulses.
+pigeon_pea,FYM/Compost,Organic,basal,1 ton/acre,Incorporate before sowing,Improves moisture holding.
+pigeon_pea,SSP,0-16-0,basal,40–50 kg/acre,Band placement,Apply near seed row at sowing.
+pigeon_pea,MOP,0-0-60,top_dressing_1,10–15 kg/acre,Broadcasting,Apply at branching stage if K deficient.
+pigeon_pea,Rhizobium inoculant,Biofertilizer,seed_treatment,As per label,Seed coating,Boosts N fixation; critical in low N soils.
+mustard,FYM/Compost,Organic,basal,0.5–1 ton/acre,Incorporate before sowing,Encourages soil microbial activity.
+mustard,DAP,18-46-0,basal,40–50 kg/acre,Band placement,Place below seed for early vigor.
+mustard,Urea,46-0-0,top_dressing_1,20 kg/acre,Broadcasting,Apply before first irrigation.
+mustard,MOP,0-0-60,top_dressing_1,10–15 kg/acre,Broadcasting,Improves oil content and lodging resistance.
+soybean,FYM/Compost,Organic,basal,1 ton/acre,Incorporate before sowing,Improves soil structure; avoid waterlogging.
+soybean,SSP,0-16-0,basal,40–50 kg/acre,Band placement,P crucial for nodulation and pod set.
+soybean,MOP,0-0-60,basal,10–15 kg/acre,Band placement,Apply if soil tests low in K.
+soybean,Rhizobium + PSB,Biofertilizer,seed_treatment,As per label,Seed coating,Combines N fixation with P solubilization.
+groundnut,FYM/Compost,Organic,basal,1–2 tons/acre,Incorporate before sowing,Enhances pod filling in sandy soils.
+groundnut,SSP,0-16-0,basal,60 kg/acre,Band placement,Sulphur in SSP benefits oilseed quality.
+groundnut,Gypsum,CaSO4·2H2O,flowering,100–200 kg/acre,Broadcasting,Apply at flowering/pegging for better kernel development.
+groundnut,MOP,0-0-60,top_dressing_1,10–15 kg/acre,Broadcasting,Apply if K deficiency suspected.
+sorghum,FYM/Compost,Organic,basal,0.5–1 ton/acre,Incorporate before sowing,Supports water use efficiency.
+sorghum,DAP,18-46-0,basal,35–40 kg/acre,Band placement,Place near seed row for root access.
+sorghum,Urea,46-0-0,top_dressing_1,25–30 kg/acre,Band placement,Apply at 3–4 weeks after sowing.
+sorghum,MOP,0-0-60,top_dressing_1,10 kg/acre,Broadcasting,Improves stress tolerance.
+pearl_millet,FYM/Compost,Organic,basal,0.5–1 ton/acre,Incorporate before sowing,Improves sandy soil CEC.
+pearl_millet,DAP,18-46-0,basal,30–35 kg/acre,Band placement,Early P supply supports root growth.
+pearl_millet,Urea,46-0-0,top_dressing_1,20–25 kg/acre,Band placement,Apply at 20–25 DAS.
+pearl_millet,MOP,0-0-60,top_dressing_1,8–10 kg/acre,Broadcasting,Apply if K is low.
+potato,FYM/Compost,Organic,basal,2 tons/acre,Incorporate before planting,Improves tuber size and soil tilth.
+potato,NPK complex,10-26-26,basal,100–120 kg/acre,Band placement,Balanced starter; adjust per soil test.
+potato,Urea,46-0-0,top_dressing_1,20–25 kg/acre,Band placement,Apply at earthing up; avoid over-N.
+potato,MOP,0-0-60,top_dressing_1,15–20 kg/acre,Band placement,K is key for tuber quality and storability.
+sugarcane,FYM/Filter press mud,Organic,basal,3–4 tons/acre,Incorporate before planting,Improves organic carbon in cane fields.
+sugarcane,Urea,46-0-0,split_N,50 kg/acre × 3 splits,Band placement,"Apply at 45, 75, 105 DAP; keep away from cane setts."
+sugarcane,SSP,0-16-0,basal,60–80 kg/acre,Band placement,Apply at planting; improves root development.
+sugarcane,MOP,0-0-60,top_dressing_1,25–30 kg/acre,Broadcasting,Apply at 75–90 DAP for cane thickness.
+sunflower,FYM/Compost,Organic,basal,0.5–1 ton/acre,Incorporate before sowing,Improves moisture retention.
+sunflower,DAP,18-46-0,basal,35–40 kg/acre,Band placement,Supports early root and head development.
+sunflower,Urea,46-0-0,top_dressing_1,20 kg/acre,Band placement,Apply at 25–30 DAS.
+sunflower,MOP,0-0-60,top_dressing_1,10–12 kg/acre,Broadcasting,K enhances oil content.
+blackgram,FYM/Compost,Organic,basal,0.5–1 ton/acre,Incorporate before sowing,Do not overuse nitrogen.
+blackgram,SSP,0-16-0,basal,30–35 kg/acre,Band placement,P supports nodulation and flowering.
+blackgram,Rhizobium inoculant,Biofertilizer,seed_treatment,As per label,Seed coating,Critical for N fixation in legumes.

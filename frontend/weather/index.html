@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather & Market Dashboard | Krishi Saathi</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌱 Krishi Saathi</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recommend/index.html">Crop Recommendation</a></li>
+        <li><a href="../fertilizer/index.html">Fertilizer Guide</a></li>
+        <li><a href="../weather/index.html"class="active">Weather & Market</a></li>
+        <li><a href="../chat/index.html">Chat Assistant</a></li>
+        <li><a href="../about/index.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Weather & Market Dashboard</h1>
+      <p>
+        Get localized 7-day weather forecast and latest crop market prices
+        for your district. Make better farming decisions with timely insights.
+      </p>
+    </div>
+  </section>
+
+  <!-- ✅ Main Dashboard -->
+  <main class="dashboard-container">
+    <!-- District Selection -->
+    <div class="form-card">
+  <h2>Select State & District</h2>
+
+  <!-- State Dropdown -->
+  <div class="form-group">
+    <select id="state" required>
+      <option value="" disabled selected>-- Select State --</option>
+    </select>
+  </div>
+
+  <!-- District Dropdown -->
+  <div class="form-group">
+    <select id="district" required>
+      <option value="" disabled selected>-- Select District --</option>
+    </select>
+  </div>
+
+  <button id="showDashboard" class="btn">Show Dashboard</button>
+</div>
+
+
+    <!-- ✅ Weather Section -->
+<section id="weatherSection" class="results-section hidden">
+  <h2>🌦️ 7-Day Weather Forecast</h2>
+  <div id="weatherCards" class="weather-cards"></div>
+</section>
+
+<!-- ✅ Market Section -->
+<section id="marketSection" class="results-section hidden">
+  <h2>💰 Market Prices</h2>
+  <p class="market-info">
+    📊 These prices represent the <strong>modal prices (₹/quintal)</strong> reported by government-approved mandis in your district.
+    Prices vary daily based on demand, supply, and quality. Use this data as a guide before selling your produce.
+  </p>
+  <table class="market-table" id="marketTable">
+    <thead>
+      <tr>
+        <th>Crop</th>
+        <th>Price (₹/quintal)</th>
+        <th>Market</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+  </main>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2025 Krishi Saathi | Smart India Hackathon Prototype</p>
+  </footer>
+
+  <script src="indian.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
