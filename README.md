@@ -1,17 +1,16 @@
 # 🌾 Asli Fasal — Smart Crop Recommendation & Farming Assistant  
-### Team ASTAR | Smart India Hackathon 2025
+
 
 **Asli Fasal** is a data-driven crop advisory and recommendation platform that helps farmers make smarter, sustainable, and profitable agricultural decisions.  
-Developed for **Smart India Hackathon 2025**, it combines AI, IoT, weather intelligence, and user-friendly design to empower farmers with personalized crop and fertilizer insights.
+it combines AI, IoT, weather intelligence, and user-friendly design to empower farmers with personalized crop and fertilizer insights.
 
 ---
 
-## 🏆 Hackathon Details
-- **Event:** Smart India Hackathon 2025  
+ 
 - **Title:** AI-Based Crop Recommendation for Farmers  
 - **Theme:** Agriculture, FoodTech & Rural Development  
 - **Category:** Software  
-- **Organization:** Government of Jharkhand – Department of Higher & Technical Education  
+
 
 ---
 
